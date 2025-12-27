@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b1acaf042016e7aed533cd7a630c57e7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b1acaf042016e7aed533cd7a630c57e7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b1acaf042016e7aed533cd7a630c57e7 = L.map(
+                "map_b1acaf042016e7aed533cd7a630c57e7",
+                {
+                    center: [12.9716, 77.5946],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_39b2dcf6599c2ee7d91cc1005d39013b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_39b2dcf6599c2ee7d91cc1005d39013b.addTo(map_b1acaf042016e7aed533cd7a630c57e7);
+        
+    
+            var marker_3a7c385cf1bc1af67495a26018bb90d4 = L.marker(
+                [12.938, 77.5824],
+                {
+}
+            ).addTo(map_b1acaf042016e7aed533cd7a630c57e7);
+        
+    
+            var icon_c84eafac67a0b640c26cb90a962f5586 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a5ea2b67f78eb73659aecc022fe62d8c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_216b243dababd1a801f27bd173250c26 = $(`<div id="html_216b243dababd1a801f27bd173250c26" style="width: 100.0%; height: 100.0%;"><b>Koramangala - Sony World Junction</b><br>Lowest speed & highest volume<br>Avg Speed: ~36-43 km/h</div>`)[0];
+                popup_a5ea2b67f78eb73659aecc022fe62d8c.setContent(html_216b243dababd1a801f27bd173250c26);
+            
+        
+
+        marker_3a7c385cf1bc1af67495a26018bb90d4.bindPopup(popup_a5ea2b67f78eb73659aecc022fe62d8c)
+        ;
+
+        
+    
+    
+            marker_3a7c385cf1bc1af67495a26018bb90d4.bindTooltip(
+                `<div>
+                     Koramangala - Sony World Junction
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3a7c385cf1bc1af67495a26018bb90d4.setIcon(icon_c84eafac67a0b640c26cb90a962f5586);
+            
+    
+            var marker_ed23601e34d4674ce1b1c6f44a99ef0b = L.marker(
+                [12.9279, 77.6271],
+                {
+}
+            ).addTo(map_b1acaf042016e7aed533cd7a630c57e7);
+        
+    
+            var icon_e9d4d84fe7e03f7c527afbc74fcbe78a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_726064b651ea082150ac1401616be123 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6edfcd43a41fa4745a571a381b728b57 = $(`<div id="html_6edfcd43a41fa4745a571a381b728b57" style="width: 100.0%; height: 100.0%;"><b>Koramangala - Sarjapur Road</b><br>Top congestion<br>Avg Speed: ~36-43 km/h</div>`)[0];
+                popup_726064b651ea082150ac1401616be123.setContent(html_6edfcd43a41fa4745a571a381b728b57);
+            
+        
+
+        marker_ed23601e34d4674ce1b1c6f44a99ef0b.bindPopup(popup_726064b651ea082150ac1401616be123)
+        ;
+
+        
+    
+    
+            marker_ed23601e34d4674ce1b1c6f44a99ef0b.bindTooltip(
+                `<div>
+                     Koramangala - Sarjapur Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ed23601e34d4674ce1b1c6f44a99ef0b.setIcon(icon_e9d4d84fe7e03f7c527afbc74fcbe78a);
+            
+    
+            var marker_3805d82ad3ba98c737f23378de43dfcd = L.marker(
+                [12.9736, 77.6187],
+                {
+}
+            ).addTo(map_b1acaf042016e7aed533cd7a630c57e7);
+        
+    
+            var icon_2d16de1f46f884dafba854596c46dd04 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1422ede25a89550b69e50c281492d56c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc44e563685debb62d8ec9d50023d96b = $(`<div id="html_dc44e563685debb62d8ec9d50023d96b" style="width: 100.0%; height: 100.0%;"><b>M.G. Road - Trinity Circle</b><br>Busy central hotspot<br>Avg Speed: ~36-43 km/h</div>`)[0];
+                popup_1422ede25a89550b69e50c281492d56c.setContent(html_dc44e563685debb62d8ec9d50023d96b);
+            
+        
+
+        marker_3805d82ad3ba98c737f23378de43dfcd.bindPopup(popup_1422ede25a89550b69e50c281492d56c)
+        ;
+
+        
+    
+    
+            marker_3805d82ad3ba98c737f23378de43dfcd.bindTooltip(
+                `<div>
+                     M.G. Road - Trinity Circle
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3805d82ad3ba98c737f23378de43dfcd.setIcon(icon_2d16de1f46f884dafba854596c46dd04);
+            
+    
+            var marker_69338eac88e7acedde3e4e4836cd00f3 = L.marker(
+                [13.0358, 77.597],
+                {
+}
+            ).addTo(map_b1acaf042016e7aed533cd7a630c57e7);
+        
+    
+            var icon_cb10edd997e6b138d11911488694beca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e2be2e1bd6fd4d03ce2101a5c480db13 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6980cc82c822a71b03356509e8f4850c = $(`<div id="html_6980cc82c822a71b03356509e8f4850c" style="width: 100.0%; height: 100.0%;"><b>Hebbal - Hebbal Flyover</b><br>Major daily bottleneck<br>Avg Speed: ~36-43 km/h</div>`)[0];
+                popup_e2be2e1bd6fd4d03ce2101a5c480db13.setContent(html_6980cc82c822a71b03356509e8f4850c);
+            
+        
+
+        marker_69338eac88e7acedde3e4e4836cd00f3.bindPopup(popup_e2be2e1bd6fd4d03ce2101a5c480db13)
+        ;
+
+        
+    
+    
+            marker_69338eac88e7acedde3e4e4836cd00f3.bindTooltip(
+                `<div>
+                     Hebbal - Hebbal Flyover
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_69338eac88e7acedde3e4e4836cd00f3.setIcon(icon_cb10edd997e6b138d11911488694beca);
+            
+    
+            var marker_b907f8c5619f25a9d308fa9fab7c847c = L.marker(
+                [12.9174, 77.6236],
+                {
+}
+            ).addTo(map_b1acaf042016e7aed533cd7a630c57e7);
+        
+    
+            var icon_c41176e2d4ce33af253f79a7ab9cf244 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd9149d6e5e0c51936a6971af54eccb2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_206d47e6ba3a40df5b1f5c654f94b89b = $(`<div id="html_206d47e6ba3a40df5b1f5c654f94b89b" style="width: 100.0%; height: 100.0%;"><b>Electronic City - Silk Board Junction</b><br>Infamous entry point<br>Avg Speed: ~36-43 km/h</div>`)[0];
+                popup_bd9149d6e5e0c51936a6971af54eccb2.setContent(html_206d47e6ba3a40df5b1f5c654f94b89b);
+            
+        
+
+        marker_b907f8c5619f25a9d308fa9fab7c847c.bindPopup(popup_bd9149d6e5e0c51936a6971af54eccb2)
+        ;
+
+        
+    
+    
+            marker_b907f8c5619f25a9d308fa9fab7c847c.bindTooltip(
+                `<div>
+                     Electronic City - Silk Board Junction
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b907f8c5619f25a9d308fa9fab7c847c.setIcon(icon_c41176e2d4ce33af253f79a7ab9cf244);
+            
+</script>
+</html>
